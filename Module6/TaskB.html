@@ -1,0 +1,75 @@
+<html>
+
+<head>
+
+    <title>Task B</title>
+
+
+    <script>
+        function myFunction(){document.getElementById("demo").innerHTML = "Paragraph written in Javascript in Head section"}
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Javascript in the body of HTML</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        document.getElementById("demo").innerHTML = "My first Javascript inside HTML"
+    </script>
+    <hr>
+
+    <h2>Javascript Function in the head Section of the HTML page.</h2>
+    <p id="demo1">A simple paragraph.</p>
+    <button type="buttton" onclick="myFunction()">Click here to call the myFunction from Head section.</button>
+    <hr>
+    <p id="demo2">A paragraph from Javascript in body section</p>
+
+    <button type="buttton" onclick="myFunction1()">Click here to call the myFunction1 from Body section.</button>
+
+    <script>
+    function myFunction1(){
+    document.getElementById("demo").innerHTML = "Function in the body, paragraph is changed."    
+    }
+    </script>
+    <hr>
+
+    <h2>External Javascript File</h2>
+
+    <p id="demo3">A paragraph before the click to change.</p>
+
+    <button type="button" onclick="myFunction2()">Click Me and see the change!</button>
+
+    <p>(myFunction2 is stored in an external file called "myScript.js)</p>
+
+    <script src="myScript.js"></script>
+    <hr>
+
+    <h2>External Javascript file from web server</h2>
+
+    <p id="demo4">A paragraph before the click to change.</p>
+
+    <button type="button" onclick="myFunction3()">Click Me and see the change!</button>
+
+    <p>(myFunction3 is stored in an external file called "myScript.js" on webserver.)</p>
+
+    <script src="http://www.mmlab2.rlc.dcccd.edu/imed1316n02/docs/myScript.js"></script>
+
+    <hr>
+    <!-----link to index page----->
+
+<p><a href= "../index.html"> Back to Index Page</a></p>
+
+
+
+
+
+
+
+</body>
+
+</html>
+
